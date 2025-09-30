@@ -1,0 +1,50 @@
+header,
+nav,
+footer {
+    background-color: black;
+    /* black background */
+    color: white;
+    /* white text */
+    text-align: center;
+    /* center text */
+    width: 100%;
+    /* ensures stretches acreoss the screen */
+}
+
+main {
+    background-color: #000000;
+    background-image: url("https://transparenttextures.com/patterns/tileable-wood.png");
+    color: white;
+}
+
+.roundedImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.centerContent {
+    display: flex;
+    /* enables flexbox */
+    flex-direction: column;
+    /* stack sections vertically */
+    align-items: center;
+    /*center items horizontally */
+    justify-content: center;
+    /* center items vertically */
+    text-align: center;
+    /* center text inside sections */
+}
+
+.aboutBox {
+    border: 2px solid white;
+    padding: 20px; 
+    margin: 20px auto;
+    width: 70%;
+    text-align: left;
+    background-color: #111;
+    color: white;
+    border-radius: 8 px;
+}
