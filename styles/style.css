@@ -11,10 +11,25 @@ footer {
     /* ensures stretches acreoss the screen */
 }
 
+nav a {
+    color: gold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 main {
     background-color: #000000;
+    /* black background */
     background-image: url("https://transparenttextures.com/patterns/tileable-wood.png");
-    color: white;
+    color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* different fonts */
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
 .roundedImage {

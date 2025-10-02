@@ -1,0 +1,99 @@
+header,
+nav,
+footer {
+    background-color: black;
+    /* black background */
+    color: aqua;
+    /* white text */
+    text-align: center;
+    /* center text */
+    width: 100%;
+    /* ensures stretches acreoss the screen */
+}
+
+nav a {
+    color: gold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: #000000;
+    /* black background */
+    background-image: url("https://transparenttextures.com/patterns/tileable-wood.png");
+    color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* different fonts */
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+section {
+    border: 1px aqua;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 75%;
+    background: black;
+    box-shadow: 0 2px 6px rgba(0, o, 0, 0.01);
+}
+
+.roundedImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.centerContent {
+    display: flex;
+    /* enables flexbox */
+    flex-direction: column;
+    /* stack sections vertically */
+    align-items: center;
+    /*center items horizontally */
+    justify-content: center;
+    /* center items vertically */
+    text-align: center;
+    /* center text inside sections */
+}
+
+.aboutBox {
+    border: 2px solid white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    text-align: left;
+    background-color: #111;
+    color: white;
+    border-radius: 8 px;
+}
+
+/* Project 1: Buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-hover:hover {
+    background: darkblue;
+}
+
+.btn-glow {
+    background: purple;
+    color: white;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 10px aqua;
+}
