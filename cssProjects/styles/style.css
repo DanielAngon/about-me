@@ -97,3 +97,39 @@ button {
 .btn-glow:hover {
     box-shadow: 0 0 10px aqua;
 }
+
+/* Project 2: Photo Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+.gallery img{
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: all 3.0 ease;
+}
+
+/* Hover Effect 1: Rotate and Dropshadow */
+.hover-one:hover {
+    transform: rotate(5deg) scale(1.05);
+    box-shadow: 0 8px 15 px rgba(0, o, 0, 0.3);
+    opacity: 1;
+}
+
+/* Hover Effect 2: Grayscale to Color Fade */
+.hover-two:hover {
+    filter: grayscale(100%);
+    transition: filter 0.4s, transform 0.3s;
+    transform: scale(1.65)
+}
+
+/* Hover Effect 3: Scale and Fade */
+.hover-three:hover {
+    transform: scale(1.65);
+    opacity: 0.5;
+}
