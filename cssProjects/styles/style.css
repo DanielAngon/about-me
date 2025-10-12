@@ -71,7 +71,7 @@ section {
     text-align: left;
     background-color: #111;
     color: white;
-    border-radius: 8 px;
+    border-radius: 8px;
 }
 
 /* Project 1: Buttons */
@@ -117,7 +117,7 @@ button {
 /* Hover Effect 1: Rotate and Dropshadow */
 .hover-one:hover {
     transform: rotate(5deg) scale(1.05);
-    box-shadow: 0 8px 15 px rgba(0, o, 0, 0.3);
+    box-shadow: 0 8px 15px rgba(0, o, 0, 0.3);
     opacity: 1;
 }
 
