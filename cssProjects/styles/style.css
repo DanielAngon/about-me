@@ -3,7 +3,7 @@ nav,
 footer {
     background-color: black;
     /* black background */
-    color: aqua;
+    color: blue;
     /* white text */
     text-align: center;
     /* center text */
@@ -24,7 +24,7 @@ main {
     background-color: #000000;
     /* black background */
     background-image: url("https://transparenttextures.com/patterns/tileable-wood.png");
-    color: aqua;
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* different fonts */
     margin: 0;
