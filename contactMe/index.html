@@ -6,111 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js"></script>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAoV0VAGY/FQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERESIiIiIiIiIRIAAAAAAAAhEgAAAAAAACESAAAAAAAAIRIAAAAAAAAhEgAAAAAAACESAAAAAAAAIRIAAAAAAAAhEgAAAAAAACESAAAAAAAAIRIAAAAAAAAhEgAAAAAAACESAAAAAAAAIRIiIiIiIiIhEREREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <h1> About Me</h1>
+        <h1> Contact Me</h1>
         <nav>
+            <a href="../index.html">Home Page</a>
+            <a href="../cssProjects/index.html" target="_blank"> CSS Projects</a>
             <a href="https://youtube.com"> My Fav Website</a>
             <a href="https://www.ea.com/games/apex-legends/apex-legends"> My Favorite Game</a>
-            <a href="../cssProjects/index.html" target="_blank"> CSS Projects</a>
-            <a href="../index.html">Home Page</a>
         </nav>
     </header>
 
     <main>
 
-    <section>
-        <h2>Introduction to the page</h2>
-        <p>This is a simulation of a contact page- this does not actually work.</p>
-    </section>
+        <section class="introBox">
+            <h2>Contact page</h2>
+            <p>This is a simulation of a contact page- this does not actually work.</p>
+        </section>
 
-    <section>
-        <form class="contact-form">
-            <h2>Contact Me</h2>
-            <p>All areas with an * are required</p>
-            <label for="name">Name: *</label>
-            <input type="text" id="name" placeholder="Your Name" required>
+        <section>
+            <form class="contact-form" id="contactForm">
+                <h2>Contact Me</h2>
 
-            <label for="email">Email: *</label>
-            <input type="email" id="email" placeholder="johndoe@gmail.com" required>
+                <!-- Basic Inputs -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="Enter a password">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
 
-            <label for="phone">Phone Number: *</label>
-            <input type="tel" id="phone" placeholder="(256)765-1000" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter a password">
 
-            <label for="website">Website: *</label>
-            <input type="url" id="phone" placeholder="https//www.google.com" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="(123) 456-7890">
 
-            <label for="age">Age: *</label>
-            <input type="number" id="age" min="1" max="120" placeholder="20" required>
+                <label for="website">Website:</label>
+                <input type="url" id="website" placeholder="https://example.com">
 
-            <label for="dob">Date of Birth: *</label>
-            <input type="date" id="dob" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" min="1" max="120" placeholder="Your Age">
 
-            <label for="time">Preferred Contact Time:</label>
-            <input type="time" id="time">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob">
 
-            <label for="color">Favorite Color:</label>
-            <input type="color" id="color" value="#007bff">
+                <label for="time">Preferred Contact Time:</label>
+                <input type="time" id="time">
 
-            <label for="range">Interest Level (1-10) *</label>
-            <input type="range" id="range" min="1" max="10" value="5" required>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" value="#007bff">
 
-            <label>Preferred Contact Method:</label>
-            <div class="inline-options">
-                <label>
-                    <input type="radio" name="contactMethod" value="Email" checked>
-                    Email
-                </label>
-                <label>
-                    <input type="radio" name="contactMethod" value="Phone">
-                    Phone
-                </label>
-                <label>
-                    <input type="radio" name="contactMethod" value="Text">
-                    Text
-                </label>
-            </div>
+                <label for="range">Interest Level (1–10):</label>
+                <input type="range" id="range" min="1" max="10" value="5">
 
-            <label>Services Interested In:</label>
-            <div class="inline-options">
-                <label>
-                    <input type="checkbox" name="service" value="Web Design">
-                    Web Design
-                </label>
-                <label>
-                    <input type="checkbox" name="service" value="Consulting">
-                    Consulting
-                </label>
-                <label>
-                    <input type="checkbox" name="service" value="Other">
-                    Other
-                </label>
-            </div>
+                <!-- Radio Buttons -->
+                <label>Preferred Contact Method:</label>
+                <div class="inline-options">
+                    <label><input type="radio" name="contactMethod" value="Email" checked> Email</label>
+                    <label><input type="radio" name="contactMethod" value="Phone"> Phone</label>
+                    <label><input type="radio" name="contactMethod" value="Text"> Text</label>
+                </div>
 
-            <label for="topic">Topic:</label>
-            <select id="topic">
-                <option value="General">General Inquiry</option>
-                <option value="Support">Support</option>
-                <option value="Feedback">Feedback</option>
-            </select>
+                <!-- Checkbox -->
+                <label>Services Interested In:</label>
+                <div class="inline-options">
+                    <label><input type="checkbox" name="service" value="Web Design"> Web Design</label>
+                    <label><input type="checkbox" name="service" value="Consulting"> Consulting</label>
+                    <label><input type="checkbox" name="service" value="Other"> Other</label>
+                </div>
 
-            <label for="message">Message: *</label>
-            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                <!-- Select Dropdown -->
+                <label for="topic">Topic:</label>
+                <select id="topic">
+                    <option value="General">General Inquiry</option>
+                    <option value="Support">Support</option>
+                    <option value="Feedback">Feedback</option>
+                </select>
 
-            <button class="btn-glow" type="submit">Submit</button>
-        </form>
-    </section>
+                <!-- Textarea -->
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
 
+                <!-- Submit Button -->
+                <button class="btn-glow" type="submit">Send</button>
+            </form>
+        </section>
+        <br>
+    </main>
     <footer>Created By: Daniel Angon</footer>
 
-    </main>
-
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
